@@ -1,0 +1,24 @@
+<service>
+  <id>sos-locator-api-service</id>
+  <name>SOS Locator API Services</name>
+  <description>Service to serve Locator API.</description>
+  <env name="nodejsArch" value="x64"/>
+  <env name="nodejsInstallVbs" value="C:\Users\snarang\AppData\Local\Temp\26\nodejs_install.vbs"/>
+  <env name="nodejsMsiPackage" value="node-v22.15.0-x64.msi"/>
+  <env name="nodejsPath" value="C:\Programs\sos-locator-api-nodejs"/>
+  <env name="nodejsTask" value="0"/>
+  <env name="nodejsUrl" value="http://nodejs.org/dist/v22.15.0/node-v22.15.0-x64.msi"/>
+  <env name="nodejsVersion" value="22.15.0"/>
+  <env name="nodejsWork" value="C:\Programs\sos-locator-api-nodejs\work"/>
+  <env name="npmBuiltinConfigFilePath" value="C:\Programs\sos-locator-api-nodejs\node_modules\npm\npmrc"/>
+  <env name="npmGlobalConfigFilePath" value="C:\Programs\sos-locator-api-nodejs\node_modules\npm\etc\npmrc"/>
+  <env name="npmPath" value="C:\Programs\sos-locator-api-nodejs\node_modules\npm"/>
+  <env name="PORT" value="3101"/>
+  <env name="DB_HOST" value="10.1.0.8" />
+  <env name="DB_USER" value="=dnn" />
+  <env name="DB_PASSWORD" value="=Hbssjm1" />
+  <env name="DB_DATABASE" value="=DNN" />
+  <executable>C:\Programs\sos-locator-api-nodejs\np.bat</executable>
+  <arguments>1 "cd SosLocatorAPI &amp;&amp; node app.js"</arguments>
+  <log mode="roll"></log>
+</service>
