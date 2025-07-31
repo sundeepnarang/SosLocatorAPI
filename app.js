@@ -8,6 +8,7 @@ const {sequelize, connectDB} = require('./config/database');
 
 
 const locationRoutes = require('./routes/locationRoutes');
+const indexRouter = require('./routes/index');
 
 const app = express();
 const PORT = process.env.PORT || 3101;
@@ -51,6 +52,7 @@ function resolveIpAddress(req) {
 }
 
 // Register API routes
+app.use('/', indexRouter);
 app.use('/api/locationsearch', locationRoutes);
 
 
