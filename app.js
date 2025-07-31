@@ -10,7 +10,7 @@ const {sequelize, connectDB} = require('./config/database');
 const locationRoutes = require('./routes/locationRoutes');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3101;
 
 // Middleware
 app.use(bodyParser.json()); // For parsing application/json
